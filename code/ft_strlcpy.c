@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include <stddef.h>
 #include <stdio.h>
+#include "lib.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

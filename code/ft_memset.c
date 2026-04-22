@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
+#include "lib.h"
 
 void	*ft_memset(void *ptr, int value, size_t count)
 {

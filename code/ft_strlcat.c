@@ -57,5 +57,4 @@ int	main(int argc, char **argv)
 	printf("dst : %s\n", dst1);
 	printf("\nlen : %ld\n", len);
 	return 0;
-}
-*/
+}*/

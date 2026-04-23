@@ -25,5 +25,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(char c);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+int		ft_toupper(int c);
 
 #endif

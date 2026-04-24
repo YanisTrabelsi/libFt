@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib.h                                              :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,8 +9,8 @@
 /*   Updated: 2026/04/22 21:16:50 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIB_H
-# define LIB_H
+#ifndef LIBFT_H
+# define LIBFT_H
 # include <stddef.h>
 
 int		ft_strlen(char *str);
@@ -26,5 +26,6 @@ void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(char c);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif

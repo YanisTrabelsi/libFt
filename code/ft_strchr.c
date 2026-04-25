@@ -6,7 +6,7 @@
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 19:28:13 by ytrabels          #+#    #+#             */
-/*   Updated: 2026/04/24 19:28:18 by ytrabels         ###   ########.fr       */
+/*   Updated: 2026/04/25 00:51:14 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -28,7 +28,6 @@ char	*ft_strchr(const char *s, int c)
 			return (str);
 		++str;
 		prev_str = str - 1;
-		printf("#\n");
 	}
 	return (0);
 }

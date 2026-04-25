@@ -6,7 +6,7 @@
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:16:50 by ytrabels          #+#    #+#             */
-/*   Updated: 2026/04/22 21:16:50 by ytrabels         ###   ########.fr       */
+/*   Updated: 2026/04/25 04:13:49 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -29,5 +29,6 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif

@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 16:21:56 by ytrabels          #+#    #+#             */
-/*   Updated: 2026/04/21 16:21:56 by ytrabels         ###   ########.fr       */
+/*   Created: 2026/04/21 20:41:02 by ytrabels          #+#    #+#             */
+/*   Updated: 2026/04/21 20:41:02 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
 #include "libft.h"
+#include <stddef.h>
 
-void	*ft_memset(void *ptr, int value, size_t count)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*c;
+	char		*c;
+	const char	*d;
 
-	c = ptr;
-	while (count-- > 0)
-		*c++ = value;
-	return (ptr);
+	c = dest;
+	d = src;
+	if (src < dest)
+	{
+		while (n-- > 0)
+			c[n] = d[n];
+		return (dest);
+	}
+	while (n-- > 0)
+		*c++ = *d++;
+	return (dest);
 }

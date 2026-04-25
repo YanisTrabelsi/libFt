@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 20:41:02 by ytrabels          #+#    #+#             */
-/*   Updated: 2026/04/21 20:41:02 by ytrabels         ###   ########.fr       */
+/*   Created: 2026/04/21 15:56:20 by ytrabels          #+#    #+#             */
+/*   Updated: 2026/04/21 15:56:20 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <libft.h>
+#include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+int	ft_isascii(int c)
 {
-	char		*c;
-	const char	*d;
-
-	c = dest;
-	d = src;
-	if (src < dest)
-	{
-		while (n-- > 0)
-			c[n] = d[n];
-		return (dest);
-	}
-	while (n-- > 0)
-		*c++ = *d++;
-	return (dest);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

@@ -16,7 +16,7 @@
 int		ft_strlen(char *str);
 void	*ft_memset(void *ptr, int value, size_t count);
 int		ft_isprint(char c);
-int		ft_isascii(char c);
+int		ft_isascii(int c);
 int		ft_isalnum(char c);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 int		ft_isdigit(char c);
@@ -31,5 +31,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *nptr);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 #endif

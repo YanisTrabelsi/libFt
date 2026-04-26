@@ -23,10 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		str = (char *)s + i;
 		if (*str == c)
-		{
-			printf("%d\n", i);
 			return (str);
-		}
 		--i;
 	}
 	return ("0");

@@ -6,7 +6,7 @@
 /*   By: ytrabels <ytrabels@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:16:50 by ytrabels          #+#    #+#             */
-/*   Updated: 2026/04/25 05:08:12 by ytrabels         ###   ########.fr       */
+/*   Updated: 2026/04/27 08:46:16 by ytrabels         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -34,5 +34,6 @@ int		ft_atoi(const char *nptr);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif

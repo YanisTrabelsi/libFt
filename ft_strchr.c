@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -24,7 +25,7 @@ char	*ft_strchr(const char *s, int c)
 	while (check == 0 || *prev_str != 0)
 	{
 		check = 1;
-		if (*str == c)
+		if (*str == (char)c)
 			return (str);
 		++str;
 		prev_str = str - 1;
@@ -35,9 +36,11 @@ char	*ft_strchr(const char *s, int c)
 int	main(void)
 {
 	char	*str;
-	char	c;
+	int		c;
 
 	str = "Yo Louka tu reviens dimanche";
-	c = 'z';
-	str = ft_strchr(str, c);
+	c = 't' + 256;
+	char *str1 = ft_strchr(str, c);
+	char *str2 = strchr(str, c);
+	printf("strchr: %p\nft_strchr: %p\n", str2, str1);
 }*/

@@ -20,7 +20,7 @@ int	ft_atoi(const char *nptr)
 
 	s = 1;
 	res = 0;
-	while (*nptr == ' ')
+	while (*nptr < 32)
 		++nptr;
 	if (*nptr == '-' || *nptr == '+')
 		s = 44 - *nptr++;
@@ -37,7 +37,7 @@ int	main(void)
 	int		res;
 	int		res2;
 
-	c = "-2147483649";
+	c = "1";
 	res = ft_atoi(c);
 	res2 = atoi(c);
 	printf("ft_atoi : %d\natoi : %d\n", res, res2);

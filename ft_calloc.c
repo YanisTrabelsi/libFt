@@ -10,14 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
-
-	if (size * count > (size_t)-1 / count)
+	if ((count >= LLONG_MAX && size != 0) || (count != 0 && size >= LLONG_MAX)
+		|| count * size > LLONG_MAX)
 		return (NULL);
 	size *= count;
 	ptr = malloc(size);
@@ -27,7 +28,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 /*
-void print_test(int *ptr1, int *ptr2, int count)
+void	print_test(char *ptr1, char *ptr2, int count)
 {
 		int	i;
 
@@ -50,14 +51,13 @@ void print_test(int *ptr1, int *ptr2, int count)
 
 int	main(void)
 {
-	int *ptr1;
-	int *ptr2;
+	char *ptr1;
+	char  *ptr2;
 	size_t count;
 	size_t size;
 
-	printf("hello");
-	count = 47480000;
-	size = 47480000;
+	count = 10;
+	size = 1;
 	ptr1 = calloc(count, size);
 	ptr2 = ft_calloc(count, size);
 	print_test(ptr1, ptr2, count);

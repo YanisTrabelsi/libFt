@@ -45,9 +45,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 int	main(void)
 {
 	char	big[30] = "aaabcabc";
-//	char	little[10] = "aabc";
 
 	printf("big + 1: %p\n", big + 1);
-	printf("ft_strnstr: %p\n", ft_strnstr(big, "cd", 8));
+	printf("ft_strnstr: %p\n", ft_strnstr(big, "", 8));
 	return (0);
 }*/

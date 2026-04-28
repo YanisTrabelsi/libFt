@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	int		len;
 	int		i;
@@ -31,7 +31,7 @@ char *ft_strdup(const char *s)
 	return (dup);
 }
 /*
-int main()
+int	main(void)
 {
 	char *str = "hello Louka";
 	char *ptr;

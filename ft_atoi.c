@@ -20,7 +20,7 @@ int	ft_atoi(const char *nptr)
 
 	s = 1;
 	res = 0;
-	while (*nptr < 32)
+	while (*nptr && *nptr <= 32)
 		++nptr;
 	if (*nptr == '-' || *nptr == '+')
 		s = 44 - *nptr++;

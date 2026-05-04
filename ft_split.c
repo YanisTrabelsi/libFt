@@ -30,6 +30,7 @@ int	words_count(char *str, char sep)
 	}
 	return (count);
 }
+
 void	word_alloc(char **tab, char *str, char sep)
 {
 	int	i;

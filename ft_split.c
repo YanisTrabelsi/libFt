@@ -84,11 +84,11 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		word_count;
 
+	if (!s)
+		return (NULL);
 	word_count = words_count((char *)s, c);
 	if (*s)
-	{
-		tab = malloc(sizeof(char *) * word_count + 1);
-	}
+		tab = malloc(sizeof(char *) * (word_count + 1));
 	else
 	{
 		tab = malloc(sizeof(char *) * 1);
